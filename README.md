@@ -1,14 +1,5 @@
 Katalog Restaurant App
-Front-end Expert Dicoding
-Submission ke 1
-Ini adalah aplikasi yang dibangun dengan memanfaatkan API katalog restauran dari dicoding.com App ini merupakan app submission pertama / ke 1 supaya dapat melanjutkan ke materi selanjutnya dari kelas Front-end Expert Dicoding
 
-Npm package version
-
-made-with-javascript
-
-Teknologi
-- Javascript - Webpack - prinsip PWA
 
 Kriteria App
 App ini dibangun haruslah memenuhi beberapa kriteria ini agar supaya dapat memenuhi persyaratan lulus:
@@ -28,6 +19,8 @@ Aksesibilitas Website Syarat: Seluruh fungsionalitas website dapat dilakukan den
 Features Katalog Restaurant App
 Dapat menyimpan restaurant yang dipilih
 Dapat responsive
+
+
 How To Use
 # Clone this repository
 $ git clone https://github.com/saul-paulus/Catalog-Restaurant-V1.git
