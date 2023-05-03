@@ -29,4 +29,6 @@ $ git clone https://github.com/saul-paulus/Catalog-Restaurant-V1.git
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run start-dev // for developer mode
+or
+$ npm run build // for production mode
