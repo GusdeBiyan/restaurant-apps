@@ -25,9 +25,6 @@ How To Use
 # Clone this repository
 $ git clone https://github.com/saul-paulus/Catalog-Restaurant-V1.git
 
-# Go into the repository
-$ cd Catalog-Restaurant-V1
-
 # Install dependencies
 $ npm install
 
