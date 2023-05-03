@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@300&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  padding: 10px;
+}
+
+
+.content {
+  padding: 32px;
+}
+
+.header {
+  background-color: #2c3e50;
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+}
+
+.header__title {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 3.5em;
+  display: inline-block;
+  color: #F2E3DB;
+}
+
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+}
+
+
+/*
+ * Top level navigation
+ */
+
+.nav {
+  background-color: transparent;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  line-height: 24px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero-image_4.jpg");
+  background-position: center;
+
+}
+
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  font-family: 'Caveat', cursive;
+  color: white;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.hero__tagline {
+
+  color: white;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.label-menu {
+  font-size: 25px;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+}
+
+
+.posts {
+  margin: 32px auto auto;
+  text-align: left;
+  display: grid;
+
+}
+
+/*
+ * post item
+ */
+
+.card {
+  margin: 16px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 16px 32px 32px 32px;
+}
+
+.card-header {
+  position: relative;
+}
+
+.post-item__thumbnail {
+  width: 100%;
+
+}
+
+.rating {
+  position: absolute;
+  margin-top: -36.5px;
+  right: 0;
+  background-color: rgba(0, 0, 0, .50);
+  color: white;
+  padding: 7px 10px;
+
+}
+
+.city {
+  color: white;
+  padding: 14px 20px;
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: 'Poppins';
+  background-color: rgba(0, 0, 0, .50);
+  position: absolute;
+  top: 0;
+
+
+}
+
+.fa-star {
+  padding-left: 5px;
+}
+
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: 0.3s opacity;
+}
+
+.card-title:hover {
+  opacity: 0.5;
+}
+
+.card-title a {
+  padding: 15px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+footer {
+  font-size: 14px;
+  color: blanchedalmond;
+  background-color: #2c3e50;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .headline {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+
+}
+
+
+
+@media screen and (min-width: 650px) {
+
+
+  .post-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .post-item__title {
+    font-size: 18px;
+  }
+
+  .post-item__description {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .header {
+    display: flex;
+    background-color: #2c3e50;
+  }
+
+  .header__inner {
+    text-align: left;
+  }
+
+  .header__title {
+    padding: 20px;
+    font-weight: 300;
+    font-size: 2em;
+  }
+
+  .header__menu {
+    font-size: 28px;
+    width: 20%;
+    min-height: 46px;
+    margin: auto;
+    text-align: center;
+    background-color: #2c3e50;
+    border: none;
+  }
+
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .header__menu {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 800px) {
+  .nav__list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero__title {
+    font-size: 25px;
+  }
+
+  .label-menu {
+    font-size: 17px;
+  }
+
+  .hero__tagline {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .description {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .card-content {
+    padding: 10px 20px 20px 20px;
+  }
+
+  footer {
+    font-size: 10px;
+    color: blanchedalmond;
+    background-color: #2c3e50;
+    padding: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  padding: 44px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+  padding: 20px;
+}
